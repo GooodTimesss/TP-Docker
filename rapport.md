@@ -1,6 +1,6 @@
 # Rapport TP Docker
 
-## Groupe
+### Groupe
 
 - SEIDOU Ahmal Seidou
 - SYLLA Sadio
