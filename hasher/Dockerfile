@@ -2,7 +2,7 @@ FROM ruby:alpine
 
 WORKDIR /app
 
-RUN gem install sinatra rackup puma
+RUN apk add --no-cache build-base && gem install sinatra rackup puma
 
 COPY hasher.rb .
 
