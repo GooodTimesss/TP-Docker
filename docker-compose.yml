@@ -1,16 +1,22 @@
 services:
+  # Base de données Redis : stocke les hashes trouvés et la vitesse de minage
   redis:
     image: redis
 
+  # Service rng : génère des octets aléatoires (source d'entropie pour le minage)
   rng:
     build: rng
 
+  # Service hasher : calcule le hash SHA256 des octets reçus
   hasher:
     build: hasher
 
+  # Service worker : orchestre le minage (appelle rng, hasher et stocke dans redis)
   worker:
     build: worker
 
+  # Interface web : affiche les statistiques de minage en temps réel
+  # Exposée sur le port 8000 de la machine hôte
   webui:
     build: webui
     ports:
