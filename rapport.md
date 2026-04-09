@@ -3,7 +3,7 @@
 ## Groupe
 
 - SEIDOU Ahmal Seidou
-- SYLLA Sadioo
+- SYLLA Sadio
 
 ---
 
