@@ -1,0 +1,17 @@
+services:
+  redis:
+    image: redis
+
+  rng:
+    build: rng
+
+  hasher:
+    build: hasher
+
+  worker:
+    build: worker
+
+  webui:
+    build: webui
+    ports:
+      - "8000:80"
